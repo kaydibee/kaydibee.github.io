@@ -1,90 +1,113 @@
 body {
-    background-color: beige;
-    margin: 0;
+  background-color: beige;
+  margin: 0;
 }
-
-
-
-
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
-
 
 /*Nav menu styling Start*/
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav ul li a.active {
+  background-color: #04aa6d;
+}
+
+#main-logo {
+  width: 20%;
 }
 
 /*Nav menu styling End*/
 
-
 /*Hero section styling start*/
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url("SakinahLineMainPhoto.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgb(81, 102, 93);
-    background-size: cover;
-    height: 30em;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("SakinahLineMainPhoto.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgb(81, 102, 93);
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
 #hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 80%;
-    height: 100%;
-    padding: 2em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5% 6%;
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4em;
-    font-weight: 800;
-    color: white;
-    margin: 0;
-    line-height: 1;
-   }
-    
-
-header p {
-    font-weight: 500;
-    color: white;
-    font-size: 1.1em;
- }
- 
-.book-button {
-    margin-top: 3em;
-    border: 1.5px solid white;
-    border-radius: 0.4em;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    width: 14em;
-    height: 3em;
-    padding: 5px;
-    background-color: transparent;
-      
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  line-height: 1;
 }
 
-.book-button p {
+header p {
+  font-weight: 500;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.book-button {
+  margin-top: 3rem;
+  border: 1.5px solid white;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  width: 14rem;
+  height: 3rem;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.book-button span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,14 +116,14 @@ header p {
   padding: 0;
   transition: 0.5s;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .book-button img {
-   max-width: 14%;
-   position: absolute;
+  max-width: 14%;
+  position: absolute;
   top: 50%;
-  right: 1em;
+  right: 1rem;
   transform: translate(0, -50%);
   margin: 0;
   padding: 0;
@@ -108,15 +131,26 @@ header p {
   transition: 0.5s;
 }
 
-.book-button:hover p {
-    left: 4em;
+.book-button:hover span {
+  left: 4.25rem;
 }
 
 .book-button:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
+.sakinah-quote {
+  background-color: #dbb26c;
+  padding: 1% 6%;
+}
 
+.sakinah-quote p {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
- /*Hero section styling end*/
+/*Hero section styling end*/
 
